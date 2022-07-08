@@ -176,5 +176,8 @@
           },
           {
             $sort: { count: -1 }
+          },
+          {
+            $limit: 1
           }
         ]).pretty()
